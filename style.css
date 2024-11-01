@@ -1,0 +1,173 @@
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: 350px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+  .background {
+    flex-direction: column;
+  }
+
+  .containerRéseaux {
+    flex-direction: column;
+  }
+
+  .marques {
+    position: relative;
+    right: 200px;
+  }
+
+  .voirTout {
+    position: relative;
+    right: 520px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #00a991;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  width: 100%;
+  align-items: center;
+}
+
+input {
+  margin-left: 25px;
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.buttonCo {
+  background-color: white;
+}
+
+.buttonLog {
+  background: black;
+  color: white;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.block1 {
+  border: solid black 1px;
+  height: 369px;
+  width: 344px;
+  background-color: #00a991;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+  margin-top: 40px;
+}
+
+.block2 {
+  border: solid black 1px;
+  height: 369px;
+  width: 344px;
+  background-color: #00a991;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+  margin-top: 40px;
+}
+
+.block3 {
+  border: solid black 1px;
+  height: 369px;
+  width: 344px;
+  background-color: #00a991;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+  margin-top: 40px;
+}
+
+.info1 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.info2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.info3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  border: solid black 1px;
+  position: relative;
+  top: 175px;
+  background-color: #00a991;
+  display: flex;
+}
+
+.logoRéseaux {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.containerRéseaux {
+  display: flex;
+  gap: 20px;
+}
+
+.marques {
+  color: white;
+  display: flex;
+  margin-left: 350px;
+}
+
+.voirTout {
+  margin-left: 430px;
+}
+
+.jordanBlack {
+  transform: scale(1, 0.5);
+}
+
+.jordanRed {
+  transform: scale(1, 0.5);
+}
+
+.jordanWhite {
+  transform: scale(1, 0.5);
+}
