@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #00a991;
+}
+
+.container {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(100s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #00a991;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #00a991, 0 0 100px #00a991;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+.container0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: sandybrown 1px solid;
+  height: 100vh;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  background-color: #00a991;
+  border: solid bisque 5px;
+  width: 50%;
+  padding: 10px;
+}
+
+.container2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #00a991;
+  border: solid bisque 5px;
+  width: 50%;
+  padding: 10px;
+}
+
+input {
+  width: 500px;
+  font-size: 20px;
+  border: solid 3px black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #efeff0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: #03110c2f;
+}
+
+button:active {
+  background-color: #efeff0;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+main {
+  height: 700px;
+}
+
+@media screen and (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+
+  .container1 {
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .container2 {
+    width: 200px;
+  }
+}

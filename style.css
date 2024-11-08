@@ -1,36 +1,9 @@
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    height: 350px;
-  }
-
-  main {
-    flex-direction: column;
-    align-items: center;
-    gap: 90px;
-  }
-  .background {
-    flex-direction: column;
-  }
-
-  .containerRéseaux {
-    flex-direction: column;
-  }
-
-  .marques {
-    position: relative;
-    right: 200px;
-  }
-
-  .voirTout {
-    position: relative;
-    right: 520px;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -88,7 +61,9 @@ main {
   width: 344px;
   background-color: #00a991;
   border-radius: 20px;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-top: 40px;
 }
 
@@ -98,7 +73,9 @@ main {
   width: 344px;
   background-color: #00a991;
   border-radius: 20px;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-top: 40px;
 }
 
@@ -108,7 +85,9 @@ main {
   width: 344px;
   background-color: #00a991;
   border-radius: 20px;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin-top: 40px;
 }
 
@@ -132,10 +111,10 @@ main {
 
 footer {
   border: solid black 1px;
-  position: relative;
-  top: 175px;
+  margin-top: auto;
   background-color: #00a991;
   display: flex;
+  justify-content: space-between;
 }
 
 .logoRéseaux {
@@ -153,11 +132,6 @@ footer {
 .marques {
   color: white;
   display: flex;
-  margin-left: 350px;
-}
-
-.voirTout {
-  margin-left: 430px;
 }
 
 .jordanBlack {
@@ -170,4 +144,34 @@ footer {
 
 .jordanWhite {
   transform: scale(1, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: 350px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-left: 50px;
+  }
+  .background {
+    flex-direction: column;
+  }
+
+  .containerRéseaux {
+  }
+
+  footer {
+    width: 100%;
+    margin-top: 200px;
+    flex-direction: column;
+  }
+
+  .marques {
+    flex-direction: column;
+  }
 }

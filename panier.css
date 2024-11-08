@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  background-color: #00a991;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  display: flex;
+  justify-content: space-between;
+  height: 130px;
+  width: 100%;
+  align-items: center;
+}
+
+input {
+  margin-left: 25px;
+  width: 350px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: #00a991;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.buttonCo {
+  background-color: white;
+}
+
+.buttonLog {
+  background: black;
+  color: white;
+  font-size: 15px;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  background-color: #efeff0;
+}
+.containerLeft {
+  padding: 20px;
+}
+
+.description {
+  width: 500px;
+}
+
+.product {
+  width: 20%;
+  display: flex;
+  background-color: #dcdcdc;
+}
+
+.commander {
+  width: 100%;
+  font-size: 30px;
+}
+h3 {
+  color: red;
+}
+select {
+  width: 50px;
+  font-size: 20px;
+}
+
+.commande {
+  display: flex;
+  flex-direction: column;
+}
+
+.paiement {
+  display: flex;
+  justify-content: space-between;
+}
+
+.livraison {
+  display: flex;
+  justify-content: space-between;
+}
+
+.barre {
+  border: solid 0.5px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+}
+.containerRight {
+  background-color: #dcdcdc;
+  padding: 20px;
+}
+
+.methode-paiement {
+  margin-top: 50px;
+  width: 10%;
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  border: solid black 1px;
+  position: relative;
+  top: 175px;
+  background-color: #00a991;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoRéseaux {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.containerRéseaux {
+  display: flex;
+  gap: 20px;
+}
+
+.marques {
+  color: white;
+  display: flex;
+}
